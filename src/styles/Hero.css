@@ -20,7 +20,7 @@
 
 .hero-title {
   font-size: 3rem;
-  font-weight: 700;
+  font-weight: bolder;
   color: #ffffff;
   margin-bottom: 20px;
   line-height: 1.2;
@@ -38,7 +38,7 @@
   font-size: 1rem;
   font-weight: 600;
   color: #0a1c27;
-  background: linear-gradient(90deg, #00ffff, #64dcff);
+  background: linear-gradient(90deg, #59DCFF, #00a0ca);
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -90,6 +90,8 @@
 @media (max-width: 768px) {
   .hero-title {
     font-size: 2rem;
+    padding-top: 70px;
+    margin-top: 30px;
   }
 
   .hero-subtitle {

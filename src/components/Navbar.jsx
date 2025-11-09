@@ -1,11 +1,20 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Link, useLocation } from "react-router-dom";
 import "../styles/Navbar.css";
-import LogoImg from "../assets/Payatech_PNG.png"; 
+import LogoImg from "../assets/Logo.png";
+
 const Navbar = () => {
-  const navItems = ["Home", "About", "Services", "Contact"];
+  const navItems = [
+    { name: "Home", path: "/" },
+    { name: "About", path: "/about" },
+    { name: "Services", path: "/services" },
+    { name: "Contact", path: "/contact" },
+  ];
+
   const [isOpen, setIsOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+  const location = useLocation();
 
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth <= 768);
@@ -24,7 +33,9 @@ const Navbar = () => {
     >
       {/* Logo */}
       <div className="logo">
-        <img src={LogoImg} alt="Logo" />
+        <Link to="/" onClick={() => setIsOpen(false)}>
+          <img src={LogoImg} alt="PAYANTECH Logo" />
+        </Link>
       </div>
 
       {/* Hamburger menu for mobile */}
@@ -47,13 +58,14 @@ const Navbar = () => {
             transition={{ duration: 0.3 }}
           >
             {navItems.map((item) => (
-              <li key={item} className="nav-item">
-                <a
-                  href={`#${item.toLowerCase()}`}
+              <li key={item.name} className="nav-item">
+                <Link
+                  to={item.path}
+                  className={location.pathname === item.path ? "active" : ""}
                   onClick={() => setIsOpen(false)}
                 >
-                  {item}
-                </a>
+                  {item.name}
+                </Link>
               </li>
             ))}
           </motion.ul>

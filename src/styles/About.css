@@ -1,0 +1,194 @@
+.about-page {
+  padding: 120px 10%;
+  color: #fff;
+  position: relative;
+  z-index: 2;
+  font-family: 'Inter';
+}
+
+/* === HERO === */
+.about-hero {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.about-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #64dcff;
+}
+
+.about-title span {
+  color: #00e0ff;
+  text-shadow: 0 0 10px #00e0ff;
+}
+
+.about-subtitle {
+  margin-top: 15px;
+  color: #fff;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.3rem;
+  line-height: 1.6;
+}
+
+/* === MISSION / VISION === */
+.about-mission, .about-vision {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(100, 220, 255, 0.3);
+  border-radius: 20px;
+  padding: 50px;
+  margin-bottom: 50px;
+  box-shadow: 0 0 25px rgba(100, 220, 255, 0.1);
+
+}
+
+.about-mission h2, .about-vision h2 {
+  color: #64dcff;
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+.about-mission p, .about-vision p {
+  color: #fff;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* === VALUES GRID === */
+.about-values {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.about-values h2 {
+  color: #64dcff;
+  margin-bottom: 30px;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.value-card {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(100, 220, 255, 0.3);
+  border-radius: 15px;
+  padding: 30px;
+  text-align: left;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 20px rgba(100, 220, 255, 0.1);
+}
+
+.value-card:hover {
+  box-shadow: 0 0 25px rgba(100, 220, 255, 0.4);
+}
+
+.value-card h3 {
+  color: #64dcff;
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+}
+
+/* === CTA SECTION === */
+.about-cta {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.about-cta h2 {
+  color: #64dcff;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.about-cta p {
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 1.2rem;
+}
+
+.cta-btn {
+  background: #64dcff;
+  color: #0a1c27;
+  padding: 14px 32px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.cta-btn:hover {
+  background: #4fc1e9;
+  box-shadow: 0 0 20px rgba(100, 220, 255, 0.5);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-title {
+    font-size: 2.2rem;
+  }
+  .about-mission, .about-vision {
+    padding: 30px;
+  }
+}
+/* --- Extra Small Screens (phones under 480px) --- */
+@media (max-width: 480px) {
+  .about-page {
+    padding: 100px 6%;
+  }
+
+  .about-title {
+    font-size: 1.8rem; /* smaller headline */
+  }
+
+  .about-subtitle {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .about-mission h2,
+  .about-vision h2 {
+    font-size: 1.4rem;
+  }
+
+  .about-mission p,
+  .about-vision p {
+    font-size: 1rem;
+  }
+
+  .about-values h2 {
+    font-size: 1.4rem;
+  }
+
+  .value-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .value-card p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .about-cta h2 {
+    font-size: 1.4rem;
+  }
+
+  .about-cta p {
+    font-size: 1rem;
+  }
+
+  .cta-btn {
+    padding: 12px 26px;
+    font-size: 0.95rem;
+  }
+}

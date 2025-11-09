@@ -115,4 +115,13 @@
       top: 100%;
     }
   }
+  .whatwedo-title{
+  font-size: 1.6rem;
+  }
+  .whatwedo-card h3{
+    font-size: 1.2rem;
+  }
+  .whatwedo-card p{
+    font-size: 1rem;
+  }
 }

@@ -4,23 +4,27 @@ import "../styles/WhatWeDo.css";
 
 const services = [
   {
-    title: "Creative Work",
-    description: "Transform imagination into reality with our creative design approach.",
+    title: "Innovation",
+    description: "We think ahead to build future solution.",
   },
   {
-    title: "Guaranteed Success",
-    description: "We turn your goals into achievements with data-driven results.",
+    title: "Simplicity",
+    description: "We make complex technology easy to use.",
   },
   {
-    title: "Innovative Ideas",
-    description: "    We think differently to create solutions that inspire growth.       ",
+    title: "Security",
+    description: "We protect what matters most—your data.",
+  },
+  {
+    title: "Trust",
+    description: "We grow through honesty, reliability.",
   },
 ];
 
 const WhatWeDo = () => {
   return (
     <section className="whatwedo">
-      <h2 className="whatwedo-title">What We Do</h2>
+      <h2 className="whatwedo-title">Our Values</h2>
       <div className="whatwedo-flow">
         {services.map((service, index) => (
           <React.Fragment key={index}>

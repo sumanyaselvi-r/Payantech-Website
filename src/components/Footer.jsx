@@ -1,14 +1,17 @@
 import React from "react";
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram, FaMapMarkerAlt } from "react-icons/fa";
 import "../styles/Footer.css";
-import LogoImg from "../assets/Payatech_PNG.png"; 
+import LogoImg from "../assets/Logo.png"; 
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <footer className="footer-section">
       <div className="footer-top">
         <div className="logo">
+    <Link to="/">
           <img src={LogoImg} alt="Logo" />
+          </Link>
         </div>
 
         <div className="footer-links">
@@ -16,10 +19,10 @@ const Footer = () => {
         </div>
 
         <div className="footer-socials">
-          <a href="#"><FaFacebookF /></a>
-          <a href="#"><FaTwitter /></a>
-          <a href="#"><FaLinkedinIn /></a>
-          <a href="#"><FaInstagram /></a>
+          <a href="#contact"><FaFacebookF /></a>
+          <a href="#contact"><FaTwitter /></a>
+          <a href="#contact"><FaLinkedinIn /></a>
+          <a href="#contact"><FaInstagram /></a>
         </div>
       </div>
 

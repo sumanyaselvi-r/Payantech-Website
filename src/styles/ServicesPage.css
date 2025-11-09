@@ -1,0 +1,142 @@
+.services-page {
+  color: #fff;
+  overflow: hidden;
+  font-family: 'Inter';
+}
+
+/* ------------------- HERO ------------------- */
+.services-hero {
+  position: relative;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: url("https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1600&q=80")
+    center/cover no-repeat;
+ 
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(5, 20, 35, 0.75);
+  backdrop-filter: blur(2px);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.hero-content h1 {
+  font-size: 2.8rem;
+  color: #64dcff;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+
+
+/* ------------------- PROCESS ------------------- */
+.process-section {
+  padding: 100px 60px;
+  background: rgba(5, 15, 25, 0.95);
+  text-align: center;
+}
+.section-title{
+ font-size: 2.5rem;
+  color: #64dcff;
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 40px;
+  margin-top: 60px;
+}
+
+.process-step {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(100, 220, 255, 0.15);
+  border-radius: 14px;
+  padding: 40px 20px;
+  transition: all 0.3s ease;
+}
+
+.process-icon {
+  font-size: 2rem;
+  color: #64dcff;
+  margin-bottom: 15px;
+}
+
+.process-step h4 {
+  color: #e2f8ff;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.process-step p {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.process-step:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 20px rgba(100, 220, 255, 0.2);
+}
+
+/* ------------------- CTA ------------------- */
+.cta-section {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(180deg, rgba(10, 28, 39, 0.9), rgba(3, 10, 18, 0.95));
+}
+
+.cta-section h2 {
+  font-size: 2rem;
+  color: #64dcff;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.cta-section p {
+  color: #fff;
+  margin-bottom: 30px;
+  font-size: 1.2rem;
+}
+
+.cta-btn {
+  background: #64dcff;
+  color: #031018;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 30px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cta-btn:hover {
+  background: #47c9ed;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  .services-section, .process-section {
+    padding: 70px 25px;
+  }
+}

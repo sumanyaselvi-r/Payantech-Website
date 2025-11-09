@@ -1,6 +1,6 @@
 .footer-section {
   background: #ffffff;
-  color: #000000;
+  color: #255e7e;
   padding: 40px 80px;
   width: 100%;
   box-sizing: border-box;
@@ -21,6 +21,7 @@
 
 .footer-top .logo img {
   height: 100px;
+  
 }
 
 .footer-links {
@@ -30,7 +31,7 @@
 
 .footer-links a {
   text-decoration: none;
-  color: #000;
+  color: #255e7e;
   font-weight: bold;
   transition: color 0.3s ease;
 }
@@ -46,7 +47,7 @@
 }
 
 .footer-socials a {
-  color: #000;
+  color: #255e7e;
   font-size: 1.2rem;
   transition: color 0.3s ease;
 }
@@ -69,6 +70,10 @@
     align-items: center;
     text-align: center;
     gap: 15px;
+  }
+  .footer-top .logo img{
+    align-items: center;
+     justify-content: center;
   }
 
   .footer-links {

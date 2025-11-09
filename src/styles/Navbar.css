@@ -1,5 +1,5 @@
 .navbar {
-  position: fixed;
+  position: fixed; /* stays at the top while scrolling */
   top: 0;
   left: 0;
   width: 100%;
@@ -9,9 +9,11 @@
   background: #fff;
   backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(0, 255, 255, 0.25);
-  z-index: 1000; /* make sure it's above everything */
-  height: 73px;
+  z-index: 9999; /* make sure it's always on top */
+  height: 80px;
   padding: 0 80px;
+  box-sizing: border-box; /* prevents layout shift */
+  font-family: 'Inter';
 }
 
 /* Logo image */
@@ -28,7 +30,7 @@
   gap: 36px;
 }
 .nav-links a{
-  color: #000;
+  color: #255e7e;
   font-size: 1.3rem;
   font-weight: 600;
   text-decoration: none;
@@ -108,8 +110,8 @@
   .nav-links.open {
     display: flex;
   }
-  .nav-item {
-    color: #fff;
+  .nav-item a {
+    color:  #fff;
     
   }
 }

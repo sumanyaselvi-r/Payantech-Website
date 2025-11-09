@@ -1,28 +1,33 @@
-import Contact from "./components/Contact";
-import Hero from "./components/Hero";
+import React from "react";
+import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import ProblemSection from "./components/Problem"
-import Background from "./components/TechBackground";
-import ValueProposition from "./components/ValueProposition";
-import WhatWeDo from "./components/WhatWeDo";
-import Services from "./components/Services";
+import Home from "./pages/Home";
+import About from "./pages/About";
 import Footer from "./components/Footer";
-function App() {
+import Background from "./components/TechBackground";
+import Contact from "./pages/Contact";
+import Services from "./pages/Service";
+const App = () => {
   return (
     <>
-      <Background />
+
+      {/* Fixed Navbar across all pages */}
       <Navbar />
-     <Hero/>
-     <ProblemSection/>
-    
-     <Services/>
-      <ValueProposition/>
-     <WhatWeDo/>
-     
-     <Contact/>
-     <Footer/>
+
+      {/* Define your routes */}
+      <Background/>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/services" element={<Services />} />
+
+      </Routes>
+
+      {/* Common Footer */}
+      <Footer />
     </>
   );
-}
+};
 
 export default App;
