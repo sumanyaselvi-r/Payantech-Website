@@ -11,7 +11,10 @@ import {
   FaRobot,
   FaChartBar,
   FaLightbulb,
-  FaSearch, FaCogs, FaRocket,FaPaperPlane,
+  FaSearch,
+  FaCogs,
+  FaRocket,
+  FaPaperPlane,
 } from "react-icons/fa";
 import "../styles/ServicesPage.css";
 
@@ -85,10 +88,10 @@ const ServicePage = () => {
     {
       title: "IT Management",
       icon: <FaServer />,
-      short: "Reliable IT systems, stress free management.",
+      short: "Reliable IT systems, stress-free management.",
       details: {
         intro:
-          "No more tech worries. We manage your infrastructure, updates, and support — so your business keeps running smoothly.",
+          "No more tech worries. We manage your infrastructure, updates, and support so your business keeps running smoothly.",
         list: [
           "Network and server setup",
           "System monitoring and updates",
@@ -152,7 +155,7 @@ const ServicePage = () => {
       short: "Expert advice for smarter tech strategies.",
       details: {
         intro:
-          "We guide you through the right technology choices to align with your business goals — practical, scalable, and future-ready.",
+          "We guide you through the right technology choices to align with your business goals practical, scalable, and future-ready.",
         list: [
           "Technology roadmap planning",
           "System audits and optimization",
@@ -166,30 +169,36 @@ const ServicePage = () => {
 
   return (
     <section className="services-page">
+      {/* HERO SECTION */}
       <section className="service-hero">
-  <div className="hero-overlay" />
-  <motion.div
-    className="hero-content"
-    initial={{ opacity: 0, y: 40 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.8 }}
-  >
-    <h1>Reliable Tech Services for Modern Businesses</h1>
-    <p>
-      We design, build, and manage digital systems that save time, boost
-      performance, and help your business scale with confidence.
-    </p>
-  </motion.div>
-</section>
+        <div className="hero-overlay" />
+        <motion.div
+          className="hero-content"
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+        >
+          <h1>Reliable Tech Services for Modern Businesses</h1>
+          <p>
+            We design, build, and manage digital systems that save time, boost
+            performance, and help your business scale with confidence.
+          </p>
+        </motion.div>
+      </section>
+
+      {/* SERVICES GRID */}
       <div className="services-section">
-        <h2 className="services-title">What We Provide</h2><br/><br/>
+        <h2 className="services-title">What We Provide</h2>
         <div className="services-grid">
           {services.map((service, index) => (
             <motion.div
               className="service-card"
               key={index}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 0.6, delay: index * 0.1 }}
               whileHover={{ scale: 1.05 }}
-              transition={{ type: "spring", stiffness: 200 }}
             >
               <div className="service-icon neon">{service.icon}</div>
               <h3>{service.title}</h3>
@@ -205,6 +214,7 @@ const ServicePage = () => {
         </div>
       </div>
 
+      {/* POPUP DETAILS */}
       <AnimatePresence>
         {selectedService && (
           <motion.div
@@ -234,86 +244,92 @@ const ServicePage = () => {
                   <li key={i}>{item}</li>
                 ))}
               </ul>
-              <p className="popup-tagline">
-                {selectedService.details.tagline}
-              </p>
+              <p className="popup-tagline">{selectedService.details.tagline}</p>
             </motion.div>
           </motion.div>
         )}
       </AnimatePresence>
-       <section className="process-section">
-      <motion.h2
-        className="section-title"
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-      >
-        Our Process
-      </motion.h2>
-       <p className="process-subtitle">
-    Here’s how we turn your ideas into working technology.
-  </p>
 
-      <div className="process-flow">
-        <motion.div
-          className="process-step"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-        >
-          <FaSearch className="process-icon" />
-          <div className="process-content">
-            <h3>Discover</h3>
-            <p>We start by learning about your business goals and challenges.</p>
-          </div>
-        </motion.div>
-
-        <div className="process-line"></div>
-
-        <motion.div
-          className="process-step"
-          initial={{ opacity: 0, y: 30 }}
+      {/* PROCESS SECTION */}
+      <section className="process-section">
+        <motion.h2
+          className="section-title"
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <FaCogs className="process-icon" />
-          <div className="process-content">
-            <h3>Build</h3>
-            <p>We design and develop smooth, secure, and scalable solutions.</p>
-          </div>
-        </motion.div>
+          Our Process
+        </motion.h2>
+        <p className="process-subtitle">
+          Here’s how we turn your ideas into working technology.
+        </p>
 
-        <div className="process-line"></div>
+        <div className="process-flow">
+          <motion.div
+            className="process-step"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+          >
+            <FaSearch className="process-icon" />
+            <div className="process-content">
+              <h3>Discover</h3>
+              <p>We start by learning about your business goals and challenges.</p>
+            </div>
+          </motion.div>
 
+          <div className="process-line"></div>
+
+          <motion.div
+            className="process-step"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+          >
+            <FaCogs className="process-icon" />
+            <div className="process-content">
+              <h3>Build</h3>
+              <p>We design and develop smooth, secure, and scalable solutions.</p>
+            </div>
+          </motion.div>
+
+          <div className="process-line"></div>
+
+          <motion.div
+            className="process-step"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7 }}
+          >
+            <FaRocket className="process-icon" />
+            <div className="process-content">
+              <h3>Launch</h3>
+              <p>We deploy your project and support it as your business grows.</p>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* CTA SECTION */}
+      <section className="cta-section">
         <motion.div
-          className="process-step"
+          className="cta-content"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
+          transition={{ duration: 0.8 }}
         >
-          <FaRocket className="process-icon" />
-          <div className="process-content">
-            <h3>Launch</h3>
-            <p>We deploy your project and support it as your business grows.</p>
-          </div>
+          <FaPaperPlane className="cta-icon" />
+          <h2>Ready to Build Something Great?</h2>
+          <p>
+            Let’s bring your ideas to life with smart, secure, and scalable
+            solutions.
+          </p>
+          <a href="/contact" className="cta-link">
+            Contact Us
+          </a>
         </motion.div>
-      </div>
+      </section>
     </section>
-      <section className="cta-section">
-      <motion.div
-        className="cta-content"
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-      >
-        <FaPaperPlane className="cta-icon" />
-        <h2>Ready to Build Something Great?</h2>
-        <p>Let’s bring your ideas to life with smart, secure, and scalable solutions.</p>
-        <a href="/contact" className="cta-link">Contact Us</a>
-      </motion.div>
-    </section>
-    </section>
-    
   );
 };
 
