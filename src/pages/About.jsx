@@ -23,7 +23,7 @@ const About = () => {
 PAYANTECH helps businesses succeed in the digital world.
 We design, build, and manage software, cloud systems, and digital tools that make operations simple, boost efficiency, and support growth.
 <br/><br/>
-We work with businesses of all sizes—from startups to established companies—providing practical, secure, and reliable technology solutions tailored to their needs.          </p>
+We work with businesses of all sizes from startups to established companies providing practical, secure, and reliable technology solutions tailored to their needs.          </p>
         </div>
       </motion.div>
 
