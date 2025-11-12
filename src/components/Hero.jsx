@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
 import "../styles/Hero.css";
-import HeroVisual from "../assets/herobg.png"; // replace with your visual image
 import { Link } from "react-router-dom";
+import Lottie from "lottie-react";
+import HeroAnimation from "../assets/hero-animation.json";
 
 const Hero = () => {
   return (
@@ -29,17 +30,22 @@ const Hero = () => {
           whileTap={{ scale: 0.95 }}
           className="hero-cta"
         >
-<Link to="/services">Explore Services</Link>        </motion.button>
+          <Link to="/services">Explore Services</Link>
+        </motion.button>
       </div>
 
-      {/* Right Visual */}
+      {/* Right Lottie Animation */}
       <motion.div
         className="hero-right"
         initial={{ opacity: 0, x: 100 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1 }}
       >
-        <img src={HeroVisual} alt="Hero Visual" />
+        <Lottie
+          animationData={HeroAnimation}
+          loop={true}
+          style={{ width: "100%", maxWidth: 600 }}
+        />
       </motion.div>
     </section>
   );
