@@ -12,29 +12,22 @@
   position: relative;
   width: 100%;
   height: 400px; /* adjust as needed */
-  background-size: cover;
-  background-position: center;
+  background-color: #031018; /* dark background */
   display: flex;
   align-items: center;
   justify-content: center;
   padding-bottom: 80px;
 }
 
+/* Remove overlay background and use this for text alignment only */
 .hero-overlay {
-  position: relative; /* change from absolute */
-  top: auto;
-  left: auto;
-  width: auto;
-  height: auto;
+  position: relative; /* no absolute overlay */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
   padding: 0 20px;
-  /* remove any background color or opacity */
-  background: none;
-  backdrop-filter: none;
 }
 
 
