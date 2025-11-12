@@ -23,7 +23,7 @@ const Services = () => {
       short: "We build software tailored to your needs.",
       details: {
         intro:
-          "Your business deserves software that fits — not the other way around. We design and build software that works the way you do. Whether you need a web app, dashboard, or automation tool, we make it simple and effective.",
+          "Your business deserves software that fits not the other way around. We design and build software that works the way you do. Whether you need a web app, dashboard, or automation tool, we make it simple and effective.",
         list: [
           "Business management software",
           "Web and mobile app development",
@@ -39,7 +39,7 @@ const Services = () => {
       short: "Smart, secure, and fast payment systems.",
       details: {
         intro:
-          "Getting paid should be easy — and safe. We build secure, flexible systems that make transactions smooth and reliable.",
+          "Getting paid should be easy and safe. We build secure, flexible systems that make transactions smooth and reliable.",
         list: [
           "Payment gateway setup and integration",
           "POS (Point of Sale) systems",
@@ -86,7 +86,7 @@ const Services = () => {
       short: "Reliable IT systems, stress-free management.",
       details: {
         intro:
-          "No more tech worries. We manage your infrastructure, updates, and support — so your business keeps running smoothly.",
+          "No more tech worries. We manage your infrastructure, updates, and support so your business keeps running smoothly.",
         list: [
           "Network and server setup",
           "System monitoring and updates",
