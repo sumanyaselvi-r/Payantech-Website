@@ -18,22 +18,25 @@
   align-items: center;
   justify-content: center;
   padding-bottom: 80px;
-  
 }
 
 .hero-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  position: relative; /* change from absolute */
+  top: auto;
+  left: auto;
+  width: auto;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
   padding: 0 20px;
+  /* remove any background color or opacity */
+  background: none;
+  backdrop-filter: none;
 }
+
 
 .hero-overlay .hero-title {
   color: #64dcff;
