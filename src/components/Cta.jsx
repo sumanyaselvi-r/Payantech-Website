@@ -17,7 +17,7 @@ const Cta = () => {
             <p>Have an idea? Let’s turn it into something extraordinary.</p>
             <Link to="/contact" className="cta-btn">Contact Us</Link>
             <br></br>
-            <br/><br/><br/>
+            <br/><br/><br/><br></br>
           </motion.div>
     </div>
   );
