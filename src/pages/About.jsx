@@ -45,8 +45,8 @@ We work with businesses of all sizes from startups to established companies prov
           </div>
           <h3>Our Mission</h3>
           <p>
-            We exist to make technology work for your business. We help you grow, serve your customers better, and focus on what matters most without the stress of complicated systems.
- We simplify, we support, and we deliver solutions that make your business run smoother.
+            To make technology easy and effective for every business. 
+            We handle the tech so our clients can focus on growing their business.
           </p>
         </motion.div>
 
@@ -65,7 +65,8 @@ We work with businesses of all sizes from startups to established companies prov
           </div>
           <h3>Our Vision</h3>
           <p>
-            We want a world where technology helps every business succeed. Our goal is to create solutions that are simple, reliable, and practical, so companies of all sizes can thrive without being held back by tech.
+            To be the go to partner for businesses seeking smart, reliable, 
+            and innovative technology solutions that empower them to achieve more.
           </p>
         </motion.div>
 
