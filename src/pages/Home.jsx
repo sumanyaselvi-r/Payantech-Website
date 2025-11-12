@@ -16,10 +16,9 @@ const Home = () => {
 
       {/* Services Section */}
       <br/><br/>
-      <h2 className="services-title">Smart Solutions for Every Business</h2>
+      <h2 className="services-title">Services We Provide</h2>
       <p className="services-subtitle">
-        We connect innovation with performance — powering businesses with
-        intelligent, scalable, and secure technology.
+        Here’s what we provide for startups and established businesses solutions that fit your workflow and help you grow.
       </p>
       <Services />
 
