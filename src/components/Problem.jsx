@@ -28,9 +28,9 @@ const ProblemSection = () => {
       >
         <h2 className="problem-title">Tech Holding You Back</h2>
         <p className="problem-subtitle">
-          Every business starts with a dream to grow, to reach more people, to make a difference. But as things move faster, technology often gets in the way. Systems don’t work together, projects take longer, and it becomes harder to keep up.
-          <br /><br />
-          Payantech Solution is here to make things easier. We bring clarity, speed, and simplicity to your technology, helping your business run better every day.
+          Every business starts with a dream — to grow, reach more people, and make a difference. But in today’s fast-moving digital world, technology can get complicated.
+<br></br><br></br>
+That’s where Payantech Solution comes in. We make technology simple, clear, and fast, so your business can run smoothly and grow every day.
         </p>
       </motion.div>
     </section>
