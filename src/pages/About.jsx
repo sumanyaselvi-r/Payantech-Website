@@ -45,7 +45,7 @@ We work with businesses of all sizes from startups to established companies prov
           </div>
           <h3>Our Mission</h3>
           <p>
-            We exist to make technology work for your business. We help you grow, serve your customers better, and focus on what matters most — without the stress of complicated systems.
+            We exist to make technology work for your business. We help you grow, serve your customers better, and focus on what matters most without the stress of complicated systems.
  We simplify, we support, and we deliver solutions that make your business run smoother.
           </p>
         </motion.div>
