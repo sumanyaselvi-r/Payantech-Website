@@ -1,8 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "../styles/Contact.css";
+import { Link } from "react-router-dom";
 
-const Contact = () => {
+const Cta = () => {
   return (
     <div>
     {/* CALL TO ACTION */}
@@ -14,7 +15,7 @@ const Contact = () => {
           >
             <h2>Let’s Build the Future Together</h2>
             <p>Have an idea? Let’s turn it into something extraordinary.</p>
-            <a href="/contact" className="cta-btn">Contact Us</a>
+            <Link to="/contact" className="cta-btn">Contact Us</Link>
             <br></br>
             <br/><br/><br/>
           </motion.div>
@@ -22,4 +23,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default Cta;

@@ -2,54 +2,100 @@ import React from "react";
 import { motion } from "framer-motion";
 import "../styles/About.css";
 import WhatWeDo from "../components/WhatWeDo";
+import { Link } from "react-router-dom";
+import { FaLightbulb, FaRocket } from "react-icons/fa"; 
+import { FaShieldAlt } from "react-icons/fa";
 
 const About = () => {
   return (
     <section className="about-page">
-      {/* HERO SECTION */}
-      <br/><br/><br/><br/><br/>
+
+      {/* HERO BANNER IMAGE */}
       <motion.div
-        className="about-hero"
+        className="about-hero-banner"
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7 }}
-      >
-        <h1 className="about-title">Who We Are</h1>
-        <p className="about-subtitle">
-         PAYANTECH is a technology solutions company dedicated to helping businesses simplify operations and reach their goals faster.
-From custom software and secure payments to cloud systems and digital marketing, we bring everything together so your business runs smoothly and efficiently.
-        </p>
-      </motion.div>
-      <br/><br/><br/><br/><br/>
-
-      {/* MISSION / VISION */}
-      <motion.div
-        className="about-mission"
-        initial={{ opacity: 0, x: -50 }}
-        whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8 }}
-        viewport={{ once: true }}
       >
-        <h2>Our Mission</h2>
-        <p>
-         To empower businesses with innovative and reliable technology that saves time, strengthens security, and drives growth.
-        </p>
+        <div className="hero-overlay">
+          <h1 className="hero-title">About PAYANTECH</h1>
+          <p className="hero-subtitle">
+PAYANTECH helps businesses succeed in the digital world.
+We design, build, and manage software, cloud systems, and digital tools that make operations simple, boost efficiency, and support growth.
+<br/><br/>
+We work with businesses of all sizes—from startups to established companies—providing practical, secure, and reliable technology solutions tailored to their needs.          </p>
+        </div>
       </motion.div>
 
+      
+
+      {/* Mission Card */}
+       <section className="mission-vision-section">
+      <div className="mission-vision-container">
+
+        {/* Mission Card */}
+        <motion.div 
+          className="mv-card"
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+        >
+          <div className="mv-icon">
+            <FaLightbulb size={50} />
+          </div>
+          <h3>Our Mission</h3>
+          <p>
+            To make technology easy and effective for every business. 
+            We handle the tech so our clients can focus on growing their business.
+          </p>
+        </motion.div>
+
+        {/* Connecting Line */}
+        <div className="mv-connector"></div>
+
+        {/* Vision Card */}
+        <motion.div 
+          className="mv-card"
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+        >
+          <div className="mv-icon">
+            <FaRocket size={50}  />
+          </div>
+          <h3>Our Vision</h3>
+          <p>
+            To be the go-to partner for businesses seeking smart, reliable, 
+            and innovative technology solutions that empower them to achieve more.
+          </p>
+        </motion.div>
+
+      </div>
+
+      {/* Tagline */}
+      <p className="mv-tagline">
+        PAYANTECH delivers technology solutions that empower growth and innovation.
+      </p>
+    </section>
+    {/*Our Promise*/}
+      <section className="promise-section">
       <motion.div
-        className="about-vision"
-        initial={{ opacity: 0, x: 50 }}
-        whileInView={{ opacity: 1, x: 0 }}
+        className="promise-content"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        viewport={{ once: true }}
       >
-        <h2>Our Vision</h2>
-        <p>
-          A future where every business — big or small — can use smart technology to achieve more with less effort.
+        <h2 className="promise-heading">Our Promise to You</h2>
+        <FaShieldAlt className="promise-icon" />
+        <p className="promise-text">
+          Delivering practical technology solutions that simplify your business.  
+          We are with you every step of the way.
         </p>
       </motion.div>
+    </section>
+      {/* WHAT WE DO SECTION */}
+      <WhatWeDo/>
 
-    <WhatWeDo/>
       {/* CALL TO ACTION */}
       <motion.div
         className="about-cta"
@@ -59,9 +105,9 @@ From custom software and secure payments to cloud systems and digital marketing,
       >
         <h2>Let’s Build the Future Together</h2>
         <p>Have an idea? Let’s turn it into something extraordinary.</p>
-        <a href="/contact" className="cta-btn">Contact Us</a>
+        <Link to="/contact" className="cta-btn">Contact Us</Link>
       </motion.div>
-      
+      <br/><br/><br/><br/><br/><br/>
     </section>
   );
 };

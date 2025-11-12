@@ -1,7 +1,7 @@
-import React from "react";
 import { motion } from "framer-motion";
 import "../styles/Hero.css";
-import HeroVisual from "../assets/hero-visual.png"; // replace with your visual image
+import HeroVisual from "../assets/herobg.png"; // replace with your visual image
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -14,7 +14,7 @@ const Hero = () => {
           transition={{ duration: 0.8 }}
           className="hero-title"
         >
-          Smart Solutions for Your Business Growth
+          Smart IT Solutions for Every Business
         </motion.h1>
         <motion.p
           initial={{ x: -100, opacity: 0 }}
@@ -22,15 +22,14 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.3 }}
           className="hero-subtitle"
         >
-          We provide from smart software to secure digital solutions, we help businesses simplify operations, save time, and grow faster.
+          We make technology easy to use so your business can work better every day.
         </motion.p>
         <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           className="hero-cta"
         >
-          <a href="#services">Explore Services</a>
-        </motion.button>
+<Link to="/services">Explore Services</Link>        </motion.button>
       </div>
 
       {/* Right Visual */}

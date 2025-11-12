@@ -88,5 +88,13 @@
   }
 .services-title {
   font-size: 1.6rem;
+  padding-left:30px;
+  padding-right:30px;
+  
+}
+.services-subtitle {
+  font-size: 1.1rem;
+  padding-left:30px;
+  padding-right:30px;
 }
 }

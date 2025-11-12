@@ -1,5 +1,5 @@
 .navbar {
-  position: fixed; /* stays at the top while scrolling */
+   position: fixed !important; /* stays at the top while scrolling */
   top: 0;
   left: 0;
   width: 100%;

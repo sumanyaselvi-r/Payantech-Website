@@ -85,6 +85,7 @@
 }
 .value-card h3{
   font-weight: bold;
+  font-size: 1.2rem;
 }
 
 .value-card:hover {
@@ -131,7 +132,7 @@
   }
 
   .value-subtitle {
-    font-size: 0.95rem;
+    font-size: 1.2rem;
   }
 
   .value-btn {
@@ -160,7 +161,7 @@
   }
 
   .value-subtitle {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     line-height: 1.5;
   }
 
@@ -180,5 +181,8 @@
 
   .value-card .icon {
     font-size: 1.6rem;
+  }
+  .value-card {
+    font-size: 1.1rem;
   }
 }

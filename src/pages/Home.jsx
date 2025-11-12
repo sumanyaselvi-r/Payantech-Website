@@ -3,8 +3,8 @@ import Hero from "../components/Hero";
 import Problem from "../components/Problem";
 import Services from "../components/Services";
 import ValueProposition from "../components/ValueProposition";
-import Contact from "../components/Contact";
 import "../styles/Services.css";
+import Cta from "../components/Cta";
 const Home = () => {
   return (
     <div className="home-page">
@@ -15,6 +15,7 @@ const Home = () => {
       <Problem />
 
       {/* Services Section */}
+      <br/><br/>
       <h2 className="services-title">Smart Solutions for Every Business</h2>
       <p className="services-subtitle">
         We connect innovation with performance — powering businesses with
@@ -26,7 +27,7 @@ const Home = () => {
       <ValueProposition />
  
       {/* Contact Section */}
-      <Contact />
+      <Cta />
     </div>
   );
 };

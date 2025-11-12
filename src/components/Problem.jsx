@@ -1,12 +1,13 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Lottie from "lottie-react";
 import "../styles/Problem.css";
-import ProblemVisual from "../assets/problem-vis.png"; // replace with your illustration
+import ProblemAnimation from "../assets/problem-animation.json"; // Lottie JSON
 
 const ProblemSection = () => {
   return (
     <section className="problem-section">
-      {/* Left Visual */}
+      {/* Left Lottie Animation */}
       <motion.div
         className="problem-left"
         initial={{ x: -100, opacity: 0 }}
@@ -14,7 +15,7 @@ const ProblemSection = () => {
         viewport={{ once: true }}
         transition={{ duration: 1 }}
       >
-        <img src={ProblemVisual} alt="Problem Visual" />
+        <Lottie animationData={ProblemAnimation} loop={true} />
       </motion.div>
 
       {/* Right Text */}
@@ -25,14 +26,12 @@ const ProblemSection = () => {
         viewport={{ once: true }}
         transition={{ duration: 1 }}
       >
-        <h2 className="problem-title">
-          Problems with Software, Payments, or Cloud Systems?
-        </h2>
+        <h2 className="problem-title">Tech Holding You Back</h2>
         <p className="problem-subtitle">
-          Managing software, payments, cloud systems, and digital marketing can be overwhelming. Businesses waste time, face security risks, and miss growth opportunities without the right technology
-       <br/><br/>We help businesses overcome these challenges with smart, secure, and simple technology solutions.
+          Every business starts with a dream to grow, to reach more people, to make a difference. But as things move faster, technology often gets in the way. Systems don’t work together, projects take longer, and it becomes harder to keep up.
+          <br /><br />
+          Payantech Solution is here to make things easier. We bring clarity, speed, and simplicity to your technology, helping your business run better every day.
         </p>
-       
       </motion.div>
     </section>
   );

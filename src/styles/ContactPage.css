@@ -128,7 +128,9 @@
 @media (max-width: 768px) {
   .contact-section {
     padding: 80px 20px;
+    margin-top: 100px;
   }
+  
 
   .contact-content {
     padding: 40px 25px;

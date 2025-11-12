@@ -7,10 +7,12 @@ import Footer from "./components/Footer";
 import Background from "./components/TechBackground";
 import Contact from "./pages/Contact";
 import Services from "./pages/Service";
+import ScrollToTop from "./components/Heroparticles";
+
 const App = () => {
   return (
     <>
-
+ <ScrollToTop />
       {/* Fixed Navbar across all pages */}
       <Navbar />
 
