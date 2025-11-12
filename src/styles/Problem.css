@@ -46,6 +46,10 @@
   color: #fff;
   margin-bottom: 20px;
 }
+.problem-subtitle span{
+  font-weight:bold;
+  font-style: italic;
+}
 
 .problem-list {
   list-style-type: disc;
