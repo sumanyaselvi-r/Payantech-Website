@@ -60,6 +60,9 @@
   font-weight: 700;
   margin-bottom: 60px;
 }
+.services-title p{
+  font-size: 1.2rem;
+}
 
 .services-grid {
   display: grid;
