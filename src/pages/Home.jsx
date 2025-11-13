@@ -18,7 +18,7 @@ const Home = () => {
       <br/><br/>
       <h2 className="services-title">Services We Provide</h2>
       <p className="services-subtitle">
-        Here’s what we provide for startups and established businesses solutions that fit your workflow and help you grow.
+        Here’s how we help startups and growing businesses with solutions that fit your workflow and fuel your growth.
       </p>
       <Services />
 
