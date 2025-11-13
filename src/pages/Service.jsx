@@ -178,10 +178,9 @@ const ServicePage = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h1>Reliable Tech Services for Modern Businesses</h1>
+          <h1>Big ideas meet smart technology</h1>
           <p>
-            We design, build, and manage digital systems that save time, boost
-            performance, and help your business scale with confidence.
+            Every big idea needs the right foundation. We help you build it, launch it, and scale it with smart, reliable, and modern technology built around your goals.
           </p>
         </motion.div>
       </section>
@@ -189,6 +188,7 @@ const ServicePage = () => {
       {/* SERVICES GRID */}
       <div className="services-section">
         <h2 className="services-title">What We Provide</h2>
+        <p>We turn complex ideas into simple, powerful solutions built to help your business grow, adapt, and move faster.</p>
         <div className="services-grid">
           {services.map((service, index) => (
             <motion.div
