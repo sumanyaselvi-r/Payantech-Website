@@ -188,7 +188,7 @@ const ServicePage = () => {
       {/* SERVICES GRID */}
       <div className="services-section">
         <h2 className="services-title">What We Provide</h2>
-        <p>We turn complex ideas into simple, powerful solutions built to help your business grow, adapt, and move faster.</p>
+        <p className="service-subtitle">We turn complex ideas into simple, powerful solutions built to help your business grow, adapt, and move faster.</p>
         <div className="services-grid">
           {services.map((service, index) => (
             <motion.div
