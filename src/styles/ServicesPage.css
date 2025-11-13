@@ -460,3 +460,7 @@ h2{
     background: linear-gradient(180deg, transparent, #64dcff, transparent);
   }
 }
+@media (max-width: 480px) {
+  .service-hero{
+    padding-top: 10px;
+  }}
