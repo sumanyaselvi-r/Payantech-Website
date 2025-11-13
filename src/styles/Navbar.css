@@ -20,7 +20,7 @@
 .logo img {
   height: 70px; /* adjust height as needed */
   margin-right: 50px; /* space between logo and nav links */
-  padding-left: 100px;
+  padding-left: 50px;
 }
 
 /* Nav links */
@@ -31,10 +31,10 @@
 }
 .nav-links a{
   color: #255e7e;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-weight: 600;
   text-decoration: none;
-  padding: 8px 12px;
+  
   border-radius: 8px;
   transition: all 0.3s ease;
 }
@@ -42,10 +42,10 @@
 .nav-item {
   color: #000;
   cursor: pointer;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-weight:bolder;
   transition: color 0.3s ease, transform 0.2s ease;
-  padding-right: 100px;
+  padding-right: 50px;
 }
 
 .nav-item:hover {
