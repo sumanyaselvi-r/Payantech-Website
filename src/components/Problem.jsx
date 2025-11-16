@@ -29,10 +29,7 @@ const ProblemSection = () => {
         <h2 className="problem-title">Tech Holding You Back</h2>
         <p className="problem-subtitle">
       
- Every business starts with a dream to grow, reach more people,and make a difference.
- <br></br>
-But in today’s fast-moving digital world, technology can get complicated.
-<br></br><br></br>
+ Every business dreams of growth and impact, but today’s fast-moving digital world makes technology complicated.
 That’s where <span>Payantech Solution</span> comes in.
  <br></br>
 We make technology simple and fast, so your business can run smoothly and grow.
