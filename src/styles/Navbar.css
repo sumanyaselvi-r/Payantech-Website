@@ -79,7 +79,7 @@
 .cta-btn {
   padding: 10px 26px;
   border-radius: 12px;
-  background: linear-gradient(135deg, #00aaff, #0066cc);
+  background: linear-gradient(135deg, #00aaff, #0066cc) !important;
   color: #fff !important;
   font-weight: 600;
 
