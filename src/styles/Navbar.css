@@ -90,7 +90,7 @@
 .cta-btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 12px 28px rgba(0, 150, 255, 0.38);
-  background-color:#003049;
+  background-color:#003049 !important;
 }
 
 /* HAMBURGER */
