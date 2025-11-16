@@ -39,10 +39,9 @@
 /* ===========================
    CTA BUTTONS
 =========================== */
-
 .hero-buttons {
   display: flex;
-  gap: 22px; /* perfect spacing */
+  gap: 22px; /* spacing between buttons */
   margin-top: 35px;
 }
 
@@ -56,9 +55,7 @@
   transition: all 0.3s ease;
 }
 
-.hero-cta a,
-.primary-cta a,
-.secondary-cta a {
+.hero-cta a {
   text-decoration: none;
   color: inherit;
 }
@@ -141,14 +138,19 @@
     font-size: 1.3rem;
   }
 
-  .hero-cta {
-    padding: 12px 24px;
-    font-size: 0.95rem;
-  }
-
+  /* Stack buttons vertically and center on mobile */
   .hero-buttons {
     flex-direction: column;
-    gap: 16px;
+    align-items: center; /* center buttons */
+    gap: 14px; /* smaller gap for mobile */
+    margin-top: 25px;
+  }
+
+  .hero-cta {
+    padding: 10px 20px;
+    font-size: 0.95rem;
+    width: 180px; /* fixed width for mobile */
+    text-align: center;
   }
 }
 
@@ -171,9 +173,14 @@
     line-height: 1.4;
   }
 
+  .hero-buttons {
+    gap: 12px; /* tight spacing for very small screens */
+  }
+
   .hero-cta {
-    padding: 10px 20px;
-    font-size: 0.9rem;
+    padding: 8px 18px;
+    font-size: 0.85rem;
+    width: 200px; /* smaller button width */
   }
 
   .hero-right .lottie {
