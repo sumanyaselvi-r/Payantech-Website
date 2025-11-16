@@ -69,7 +69,7 @@ const Navbar = () => {
             ))}
 
             <li>
-              <Link to="/contact" className="cta-btn">
+              <Link to="/contact" className="navcta-btn">
                 Contact Us
               </Link>
             </li>
