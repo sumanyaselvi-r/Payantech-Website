@@ -15,7 +15,7 @@ const ValueProposition = () => {
         >
           <h2 className="value-title">Why Choose Us</h2>
           <p className="value-subtitle">
-            We understand your challenges and make technology easy and stress-free.
+            We deliver smart IT solutions designed to support your growth and simplify your daily operations.
           </p>
         </motion.div>
 
