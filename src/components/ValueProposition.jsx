@@ -29,25 +29,25 @@ const ValueProposition = () => {
           <div className="value-card">
            
             <h3>Affordable Solutions</h3>
-            <p>Smart technology that fits your budget.</p>
+            <p>High-quality technology that fits your budget.</p>
           </div>
 
           <div className="value-card">
             
             <h3>Quick and Reliable</h3>
-            <p>Projects done on time, every time.</p>
+            <p>Projects delivered on time, every time.</p>
           </div>
 
           <div className="value-card">
             
             <h3>Experienced Team</h3>
-            <p>Experts who understand your goals.</p>
+            <p> Skilled professionals who understand your goals.</p>
           </div>
 
            <div className="value-card">
             
             <h3>Always Here for You</h3>
-            <p>Support you can actually rely on.</p>
+            <p>Dependable support whenever you need us.</p>
           </div>
         </motion.div>
       </div>
