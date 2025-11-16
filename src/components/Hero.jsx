@@ -45,7 +45,7 @@ whileHover={{ scale: 1.05 }}
 whileTap={{ scale: 0.95 }}
 className="hero-cta secondary-cta"
 >
-<Link to="/contact">Contact Us</Link>
+<Link to="/contact">Get a Free Quote</Link>
 </motion.button>
 </div>
 </div>
