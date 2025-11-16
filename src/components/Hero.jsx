@@ -26,7 +26,7 @@ animate={{ x: 0, opacity: 1 }}
 transition={{ duration: 0.8, delay: 0.3 }}
 className="hero-subtitle"
 >
-From custom software to cloud services and IT support all in one place. We make technology simple so your business can thrive.
+From custom software to cloud services and IT support, all in one place to help your business thrive.
 </motion.p>
 
 
