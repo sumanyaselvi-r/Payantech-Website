@@ -76,7 +76,7 @@
 }
 
 /* CTA BUTTON */
-.cta-btn {
+.navcta-btn {
   padding: 10px 26px;
   border-radius: 12px;
   background: linear-gradient(135deg, #00aaff, #0066cc) !important;
@@ -87,7 +87,7 @@
   transition: 0.3s ease;
 }
 
-.cta-btn:hover {
+.navcta-btn:hover {
   transform: translateY(-3px);
  
 }
