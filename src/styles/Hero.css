@@ -1,3 +1,6 @@
+/* ===========================
+   HERO SECTION
+=========================== */
 .hero-section {
   display: flex;
   justify-content: space-between;
@@ -8,13 +11,13 @@
   position: relative;
   z-index: 1;
   color: #ffffff;
-  font-family: 'poppins';
-  
+  font-family: 'Inter';
 }
 
+/* LEFT SIDE */
 .hero-left {
   flex: 1;
-  width:100%;
+  width: 100%;
   padding-left: 100px;
 }
 
@@ -33,30 +36,60 @@
   margin-bottom: 30px;
 }
 
+/* ===========================
+   CTA BUTTONS
+=========================== */
+
+.hero-buttons {
+  display: flex;
+  gap: 22px; /* perfect spacing */
+  margin-top: 35px;
+}
+
+/* Base CTA button */
 .hero-cta {
   padding: 14px 32px;
   font-size: 1rem;
   font-weight: 600;
-  color: #0a1c27;
-  background: linear-gradient(90deg, #59DCFF, #00a0ca);
-  border: none;
   border-radius: 8px;
   cursor: pointer;
-  box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
   transition: all 0.3s ease;
 }
-.hero-cta a{
-  
+
+.hero-cta a,
+.primary-cta a,
+.secondary-cta a {
   text-decoration: none;
-  color: #000;
-  text-align: center;
-  align-items: center;
+  color: inherit;
 }
 
-.hero-cta:hover {
-  box-shadow: 0 0 25px rgba(0, 255, 255, 0.8);
+/* Primary CTA */
+.primary-cta {
+  background: linear-gradient(90deg, #59DCFF, #00a0ca);
+  color: #0a1c27;
+  border: none;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
 }
 
+.primary-cta:hover {
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.7);
+  transform: translateY(-2px);
+}
+
+/* Secondary CTA */
+.secondary-cta {
+  background: transparent;
+  color: #ffffff;
+  border: 2px solid #59DCFF;
+}
+
+.secondary-cta:hover {
+  background: rgba(89, 220, 255, 0.1);
+  border-color: #00c4ff;
+  transform: translateY(-2px);
+}
+
+/* RIGHT SIDE (Lottie Animation) */
 .hero-right {
   flex: 1;
   display: flex;
@@ -64,13 +97,15 @@
   align-items: center;
 }
 
-.hero-right img {
-   width: 100%;
+.hero-right .lottie {
+  width: 100%;
   max-width: 600px;
   height: auto;
 }
 
-/* Tablet: 1024px and below */
+/* ===========================
+   RESPONSIVE TABLET
+=========================== */
 @media (max-width: 1024px) {
   .hero-section {
     flex-direction: column;
@@ -81,7 +116,10 @@
   .hero-left {
     max-width: 100%;
     padding-left: 0;
-    
+  }
+
+  .hero-buttons {
+    justify-content: center;
   }
 
   .hero-right {
@@ -89,7 +127,9 @@
   }
 }
 
-/* Mobile: 768px and below */
+/* ===========================
+   RESPONSIVE MOBILE
+=========================== */
 @media (max-width: 768px) {
   .hero-title {
     font-size: 2.5rem;
@@ -105,13 +145,20 @@
     padding: 12px 24px;
     font-size: 0.95rem;
   }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 16px;
+  }
 }
 
-/* Small mobile / very narrow screens: 480px and below */
+/* ===========================
+   SMALL MOBILE
+=========================== */
 @media (max-width: 480px) {
   .hero-section {
     padding: 80px 20px 40px 20px;
-    margin-top:100px;
+    margin-top: 100px;
   }
 
   .hero-title {
@@ -129,7 +176,7 @@
     font-size: 0.9rem;
   }
 
-  .hero-right img {
+  .hero-right .lottie {
     width: 90%;
   }
 }
