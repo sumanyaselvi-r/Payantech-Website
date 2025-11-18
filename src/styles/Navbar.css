@@ -85,6 +85,7 @@
 
   box-shadow: 0 6px 18px rgba(0, 150, 255, 0.28);
   transition: 0.3s ease;
+  text-decoration: none;
 }
 
 .navcta-btn:hover {
