@@ -30,8 +30,9 @@ const ProblemSection = () => {
         <p className="problem-subtitle">
       
  Every business dreams of growth and impact, but today’s fast-moving digital world makes technology complicated.
+          <br></br><br></br><br></br>
 That’s where <span>Payantech Solution</span> comes in.
- <br></br>
+ <br></br><br></br>
 We make technology simple and fast, so your business can run smoothly and grow.
         </p>
       </motion.div>
