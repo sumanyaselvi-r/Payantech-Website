@@ -26,9 +26,9 @@ const Footer = () => {
     href="https://twitter.com"
     target="_blank"
     rel="noopener noreferrer"
-    aria-label="Twitter (X)"
+    aria-label="Twitter"
   >
-    <FaXTwitter />
+    <FaTwitter />
   </a>
 
   <a 
