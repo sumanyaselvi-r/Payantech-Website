@@ -26,7 +26,10 @@
 
 .footer-links {
   display: flex;
-  gap: 30px;
+  align-items: center;
+  gap: 10px; /* controls space between icon and text */
+  color: #255e7e;
+  font-weight: bold;
 }
 
 .footer-links a {
