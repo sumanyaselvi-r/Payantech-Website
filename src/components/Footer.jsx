@@ -20,14 +20,6 @@ const Footer = () => {
 
         <div className="footer-socials">
          
-          <a 
-    href="https://facebook.com" 
-    target="_blank" 
-    rel="noopener noreferrer" 
-    aria-label="Facebook"
-  >
-    <FaFacebookF />
-  </a>
 
    <a 
     href="https://twitter.com"
