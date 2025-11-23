@@ -21,16 +21,6 @@ const Footer = () => {
 
         <div className="footer-socials">
          
-
-   <a 
-    href="https://twitter.com"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="Twitter"
-  >
-    <FaTwitter />
-  </a>
-
   <a 
     href="https://www.linkedin.com/in/payantech-solutions-079a35391/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
     target="_blank" 
