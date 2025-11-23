@@ -29,13 +29,13 @@ const Footer = () => {
     <FaFacebookF />
   </a>
 
-  <a 
-    href="https://twitter.com" 
-    target="_blank" 
-    rel="noopener noreferrer" 
-    aria-label="Twitter"
+   <a 
+    href="https://twitter.com"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Twitter (X)"
   >
-    <FaTwitter />
+    <FaXTwitter />
   </a>
 
   <a 
