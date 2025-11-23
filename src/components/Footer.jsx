@@ -21,7 +21,14 @@ const Footer = () => {
         <div className="footer-socials">
           <a href="#contact"><FaFacebookF /></a>
           <a href="#contact"><FaTwitter /></a>
-          <Link to="/https://www.linkedin.com/in/payantech-solutions-079a35391/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><FaLinkedinIn /></Link>
+          <a 
+    href="https://www.linkedin.com/in/payantech-solutions-079a35391/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+    target="_blank" 
+    rel="noopener noreferrer" 
+    aria-label="LinkedIn"
+  >
+    <FaLinkedinIn />
+  </a>
           <a href="#contact"><FaInstagram /></a>
         </div>
       </div>
