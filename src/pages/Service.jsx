@@ -324,7 +324,7 @@ const ServicePage = () => {
             Let’s bring your ideas to life with smart, secure, and scalable
             solutions.
           </p>
-          <Link to="/contact" className="cta-link">
+          <Link to="/contact" className="cta-btn">
             Contact Us
           </Link>>
         </motion.div>
